@@ -12,8 +12,8 @@ FitFam is a simple web application to track workouts alongside your buddies.
 
 To run the FitFam API locally at port *3000*, simply
 
-    npm run start
+    npm start
 
-To verify the API is running, simply
+To verify the API is running, simply visit
 
-    http://localhost:3000
+    http://localhost:3000/ping

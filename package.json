@@ -1,7 +1,8 @@
 {
   "name": "fitfam",
   "version": "1.0.0",
-  "description": "Workout app for you and your buddies",
+  "description": "Rest API for FitFam, a workout app for you and your buddies",
+  "private": true,
   "main": "dist/server.js",
   "scripts": {
     "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
