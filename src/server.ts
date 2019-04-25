@@ -1,12 +1,13 @@
-import * as express from 'express';
+import express from "express";
 
 const app = express();
-const port = 8080;
+const port = 3000;
 
-app.get( "/", ( _, res ) => {
-  res.send( "Hello world!" );
+app.get( "/ping", ( _, res ) => {
+  res.send("pong");
 });
 
-app.listen( port, () => {
+// Start the server
+app.listen(port, () => {
   console.log(`server started at http://localhost:${port}`);
 });
