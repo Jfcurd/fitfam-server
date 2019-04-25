@@ -1,0 +1,16 @@
+{
+  "name": "fitfam",
+  "version": "1.0.0",
+  "description": "Workout app for you and your buddies",
+  "main": "index.js",
+  "scripts": {
+  },
+  "author": "Jordan Curd",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "typescript": "^3.4.5"
+  }
+}
