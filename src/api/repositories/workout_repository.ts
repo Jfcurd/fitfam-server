@@ -11,21 +11,9 @@ class WorkoutRepository {
     this.workouts = [
       {
         id: 1,
-        name: 'Test Workout 1',
+        name: 'Sample Workout 1',
         createdAt: new Date(),
         exercises: [{ exercise: { name: 'Squats' } }, { exercise: { name: 'Deadlifts' } }],
-      },
-      {
-        id: 2,
-        name: 'Test Workout 2',
-        createdAt: new Date(),
-        exercises: [{ exercise: { name: 'Bench press' } }, { exercise: { name: 'Dumbbell shoulder press' } }],
-      },
-      {
-        id: 3,
-        name: 'Test Workout 3',
-        createdAt: new Date(),
-        exercises: [],
       },
     ];
   }
