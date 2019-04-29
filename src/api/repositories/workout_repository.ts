@@ -1,5 +1,7 @@
 import { Workout } from './../models/workout';
 
+// Repositories are responsible for reading and writing data to
+// some kind of persisted storage, like PSQL
 class WorkoutRepository {
   private workouts: Workout[];
 
@@ -23,8 +25,9 @@ class WorkoutRepository {
   }
 
   public CreateEmpty(): Workout {
+    console.log(this.workouts);
     const workout: Workout = {
-      id: Math.max(...this.workouts.map(w => w.id), 1),
+      id: Math.max(...this.workouts.map(w => w.id), 0) + 1,
       createdAt: new Date(),
     };
     this.workouts.push(workout);

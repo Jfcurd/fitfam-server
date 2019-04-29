@@ -6,6 +6,9 @@ export function RegisterRoutes(app: express.Express) {
     res.send("pong");
   });
 
+  // TODO: Probably break out routes by controller for cleanliness
+  // Eg. workouts.routes.ts
+
   app.get("/workouts", (_, res) => {
     const controller = new WorkoutsController();
     const data = controller.GetAll();
@@ -19,6 +22,8 @@ export function RegisterRoutes(app: express.Express) {
   });
 }
 
+// Nest response under data prop for client read consistency
+// TODO: Add other props to the response, like pagination
 function success(data: any) {
   return {
     data: data,
