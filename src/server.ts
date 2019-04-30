@@ -8,9 +8,10 @@ dotenv.config();
 const app = express();
 const port = process.env.API_PORT;
 
+// Middleware
+// Let the client actually make requests to this API
 app.use((_, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Methods', 'PUT, PATCH, POST, GET, DELETE, OPTIONS');
   next();
 });
 

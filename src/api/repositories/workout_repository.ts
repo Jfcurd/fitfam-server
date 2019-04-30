@@ -25,7 +25,6 @@ class WorkoutRepository {
   }
 
   public CreateEmpty(): Workout {
-    console.log(this.workouts);
     const workout: Workout = {
       id: Math.max(...this.workouts.map(w => w.id), 0) + 1,
       createdAt: new Date(),
